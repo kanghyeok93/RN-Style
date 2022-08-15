@@ -1,11 +1,11 @@
 import React from 'react';
 import {View} from 'react-native';
-import BasicStyle from './example/BasicStyle';
+import BasicScreen from './src/screen/BasicScreen';
 
 const App = () => {
   return (
     <View>
-      <BasicStyle />
+      <BasicScreen />
     </View>
   );
 };

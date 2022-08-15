@@ -1,13 +1,20 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import basicStyle from '../styles/BasicStyle';
 
-const BasicStyle = () => {
+const BasicScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.red}>just red</Text>
       <Text style={styles.bigBlue}>just bigBlue</Text>
       <Text style={[styles.bigBlue, styles.red]}>bigBlue, then red</Text>
       <Text style={[styles.red, styles.bigBlue]}>red, then bigBlue</Text>
+
+      <View>
+        <Text style={[basicStyle.text, basicStyle.text2]}>
+          Style File Brown Text
+        </Text>
+      </View>
     </View>
   );
 };
@@ -26,4 +33,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default BasicStyle;
+export default BasicScreen;
