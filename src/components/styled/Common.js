@@ -9,14 +9,35 @@ export const colors = {
   InfoDark: '#0099CC',
 };
 
+const colorFrame = (props, keyword, defaultColor) => {
+  const colorsKeys = Object.keys(colors);
+  const propsKeys = Object.keys(props);
+
+  const filter = colorsKeys.filter(data => {
+    // props로 받은 색상이 colors에 존재하는지 검증
+    if (propsKeys.includes(`${keyword}${data}`)) {
+      // props 해당 컬러 value값이 true일 경우에만 colors색상 반환
+      return props[`${keyword}${data}`];
+    }
+  });
+
+  return filter.length ? colors[filter[0]] : defaultColor;
+};
+
 // background color
-export const BACKGROUND_COLOR = props => {};
+export const BACKGROUND_COLOR = props => {
+  return colorFrame(props, 'bg', 'transparent');
+};
 
 // border color
-export const BORDER_COLOR = props => {};
+export const BORDER_COLOR = props => {
+  return colorFrame(props, 'br', 'transparent');
+};
 
 // font color
-export const FONT_COLOR = props => {};
+export const FONT_COLOR = props => {
+  return colorFrame(props, 'ft', '#000000');
+};
 
 // margin
 export const MARGIN_TOP = props => {
