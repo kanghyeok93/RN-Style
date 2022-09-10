@@ -29,3 +29,8 @@ export const View = styled.View(props => ({
   // zIndex
   zIndex: props.zIndex || 0,
 }));
+
+export const SafeAreaView = styled.SafeAreaView(props => ({
+  flex: 1,
+  backgroundColor: Common.BACKGROUND_COLOR(props),
+}));

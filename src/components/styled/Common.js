@@ -10,16 +10,14 @@ export const colors = {
 };
 
 const colorFrame = (props, keyword, defaultColor) => {
+  // colorsKeys ["Danger", "Warning", "Success", "Info", "DangerDark", "WarningDark", "SuccessDark", "InfoDark"]
   const colorsKeys = Object.keys(colors);
+  // ["bgInfo", "children", "forwardedComponent", "forwardedRef", "theme"]
   const propsKeys = Object.keys(props);
 
-  const filter = colorsKeys.filter(data => {
-    // props로 받은 색상이 colors에 존재하는지 검증
-    if (propsKeys.includes(`${keyword}${data}`)) {
-      // props 해당 컬러 value값이 true일 경우에만 colors색상 반환
-      return props[`${keyword}${data}`];
-    }
-  });
+  const filter = colorsKeys.filter(data =>
+    propsKeys.includes(`${keyword}${data}`),
+  );
 
   return filter.length ? colors[filter[0]] : defaultColor;
 };

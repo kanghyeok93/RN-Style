@@ -1,15 +1,16 @@
 import React from 'react';
-import {View} from 'react-native';
+import {SafeAreaView} from './src/components/styled/View';
 import BasicScreen from './src/screen/BasicScreen';
 import StyledBasicScreen from './src/screen/StyledBasicScreen';
 import SCScreen from './src/screen/SCScreen';
 
 const App = () => {
   return (
-    <View>
+    <SafeAreaView bgInfo>
       {/* <BasicScreen /> */}
-      <StyledBasicScreen />
-    </View>
+      {/* <StyledBasicScreen /> */}
+      <SCScreen />
+    </SafeAreaView>
   );
 };
 

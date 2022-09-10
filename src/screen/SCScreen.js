@@ -1,9 +1,10 @@
-import {View, Text} from 'react-native';
+import {Text} from 'react-native';
 import React from 'react';
+import {SafeAreaView, View} from '../components/styled/View';
 
 const SCScreen = () => {
   return (
-    <View>
+    <View bgInfoDark>
       <Text>SCScreen</Text>
     </View>
   );
