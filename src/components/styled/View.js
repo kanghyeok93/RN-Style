@@ -34,3 +34,7 @@ export const SafeAreaView = styled.SafeAreaView(props => ({
   flex: 1,
   backgroundColor: Common.BACKGROUND_COLOR(props),
 }));
+
+export const ViewRow = styled(View)({
+  flexDirection: 'row',
+});
