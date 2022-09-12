@@ -38,3 +38,20 @@ export const SafeAreaView = styled.SafeAreaView(props => ({
 export const ViewRow = styled(View)({
   flexDirection: 'row',
 });
+
+export const ViewAbsolute = styled(View)(props => ({
+  position: 'absolute',
+
+  top: props.top,
+  left: props.left,
+  right: props.right,
+  bottom: props.bottom,
+}));
+
+export const ViewBorder = styled(View)(props => ({
+  borderColor: Common.BORDER_COLOR(props),
+  borderLeftWidth: Common.BORDER_LEFT_WIDTH(props),
+  borderRightWidth: Common.BORDER_RIGHT_WIDTH(props),
+  borderTopWidth: Common.BORDER_TOP_WIDTH(props),
+  borderBottomWidth: Common.BORDER_BOTTOM_WIDTH(props),
+}));
