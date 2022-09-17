@@ -27,7 +27,7 @@ export const View = styled.View(props => ({
   paddingBottom: Common.PADDING_BOTTOM(props),
 
   // zIndex
-  zIndex: props.zIndex || 0,
+  zIndex: props.zIndex || 1,
 }));
 
 export const SafeAreaView = styled.SafeAreaView(props => ({
@@ -54,4 +54,10 @@ export const ViewBorder = styled(View)(props => ({
   borderRightWidth: Common.BORDER_RIGHT_WIDTH(props),
   borderTopWidth: Common.BORDER_TOP_WIDTH(props),
   borderBottomWidth: Common.BORDER_BOTTOM_WIDTH(props),
+
+  borderRadius: props.borderRadius || '5px',
 }));
+
+export const ViewRowBorder = styled(ViewBorder)({
+  flexDirection: 'row',
+});

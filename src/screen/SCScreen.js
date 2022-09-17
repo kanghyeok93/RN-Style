@@ -25,9 +25,7 @@ const SCScreen = () => {
         height={100}
         marginTop={15}
         borderLeftWidth={5}
-        borderRightWidth={5}
-        borderTopWidth={2}
-        borderBottomWidth={2}>
+        borderRightWidth={5}>
         <Text>ViewBorder</Text>
       </ViewBorder>
     </View>
