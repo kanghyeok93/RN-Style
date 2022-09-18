@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Text} from '../components/styled/Text';
 import {View, ViewBorder, ViewRow} from '../components/styled/View';
 
 const SCScreen = () => {
@@ -14,7 +14,7 @@ const SCScreen = () => {
           <Text>View Row 1</Text>
         </View>
         <View bgWarning flex={1}>
-          <Text>View Row 2</Text>
+          <Text bold>View Row 2</Text>
         </View>
       </ViewRow>
 

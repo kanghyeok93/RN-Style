@@ -121,7 +121,7 @@ export const FONT_SIZE = props => {
 // font weight
 export const FONT_WEIGHT = props => {
   if (props.bold) {
-    return 'Bold';
+    return 'bold';
   }
-  return 'Regular';
+  return 'normal';
 };
