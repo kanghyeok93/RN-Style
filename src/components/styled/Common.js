@@ -98,6 +98,20 @@ export const BORDER_TOP_WIDTH = props => {
   return props.borderTopWidth || '1px';
 };
 
+// border radius
+export const BORDER_TOP_LEFT_WIDTH = props => {
+  return props.borderTopLeftRadius || '1px';
+};
+export const BORDER_TOP_RIGHT_WIDTH = props => {
+  return props.borderTopRightRadius || '1px';
+};
+export const BORDER_BOTTOM_LEFT_WIDTH = props => {
+  return props.borderBottomLeftRadius || '1px';
+};
+export const BORDER_BOTTOM_RIGHT_WIDTH = props => {
+  return props.borderBottomRightRadius || '1px';
+};
+
 // font size
 export const FONT_SIZE = props => {
   if (props.ftVerySmall) {
