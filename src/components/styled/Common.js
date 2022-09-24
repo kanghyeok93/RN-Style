@@ -86,30 +86,30 @@ export const PADDING_BOTTOM = props => {
 
 // border width
 export const BORDER_LEFT_WIDTH = props => {
-  return props.borderLeftWidth || '1px';
+  return props.borderLeftWidth;
 };
 export const BORDER_RIGHT_WIDTH = props => {
-  return props.borderRightWidth || '1px';
+  return props.borderRightWidth;
 };
 export const BORDER_BOTTOM_WIDTH = props => {
-  return props.borderBottomWidth || '1px';
+  return props.borderBottomWidth;
 };
 export const BORDER_TOP_WIDTH = props => {
-  return props.borderTopWidth || '1px';
+  return props.borderTopWidth;
 };
 
 // border radius
 export const BORDER_TOP_LEFT_WIDTH = props => {
-  return props.borderTopLeftRadius || '1px';
+  return props.borderTopLeftRadius;
 };
 export const BORDER_TOP_RIGHT_WIDTH = props => {
-  return props.borderTopRightRadius || '1px';
+  return props.borderTopRightRadius;
 };
 export const BORDER_BOTTOM_LEFT_WIDTH = props => {
-  return props.borderBottomLeftRadius || '1px';
+  return props.borderBottomLeftRadius;
 };
 export const BORDER_BOTTOM_RIGHT_WIDTH = props => {
-  return props.borderBottomRightRadius || '1px';
+  return props.borderBottomRightRadius;
 };
 
 // font size

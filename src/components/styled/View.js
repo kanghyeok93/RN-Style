@@ -60,7 +60,8 @@ export const ViewBorder = styled(View)(props => ({
   borderBottomLeftRadius: Common.BORDER_BOTTOM_LEFT_WIDTH(props),
   borderBottomRightRadius: Common.BORDER_BOTTOM_RIGHT_WIDTH(props),
 
-  borderRadius: props.borderRadius || '1px',
+  borderWidth: props.borderWidth,
+  borderRadius: props.borderRadius,
 }));
 
 export const ViewRowBorder = styled(ViewBorder)({
