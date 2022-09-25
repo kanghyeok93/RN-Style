@@ -1,4 +1,5 @@
 import React from 'react';
+import {Button} from '../components/styled/Button';
 import {Image, ImageBorder} from '../components/styled/Image';
 import {Text} from '../components/styled/Text';
 import {View, ViewBorder, ViewRow} from '../components/styled/View';
@@ -52,6 +53,10 @@ const SCScreen = () => {
           }}
         />
       </ViewRow>
+
+      <Button width={150} height={100} marginTop={30} bgGreen>
+        <Text ftLarge>Button</Text>
+      </Button>
     </View>
   );
 };
