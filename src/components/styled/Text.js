@@ -30,6 +30,9 @@ export const Text = styled.Text(props => ({
   paddingTop: Common.PADDING_TOP(props),
   paddingBottom: Common.PADDING_BOTTOM(props),
 
+  margin: props.margin,
+  padding: props.padding,
+
   // align
   textAlign: props.textAlign || 'left',
 

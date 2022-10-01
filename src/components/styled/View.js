@@ -26,6 +26,9 @@ export const View = styled.View(props => ({
   paddingTop: Common.PADDING_TOP(props),
   paddingBottom: Common.PADDING_BOTTOM(props),
 
+  margin: props.margin,
+  padding: props.padding,
+
   // zIndex
   zIndex: props.zIndex || 1,
 }));

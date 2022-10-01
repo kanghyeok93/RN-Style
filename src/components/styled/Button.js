@@ -24,6 +24,9 @@ export const Button = styled.TouchableOpacity(props => ({
   paddingRight: Common.PADDING_RIGHT(props),
   paddingTop: Common.PADDING_TOP(props),
   paddingBottom: Common.PADDING_BOTTOM(props),
+
+  margin: props.margin,
+  padding: props.padding,
 }));
 
 export const ButtonBorder = styled(Button)(props => ({

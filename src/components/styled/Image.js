@@ -15,6 +15,8 @@ export const Image = styled.Image(props => ({
   marginTop: Common.MARGIN_TOP(props),
   marginBottom: Common.MARGIN_BOTTOM(props),
 
+  margin: props.margin,
+
   // size mode
   resizeMode: props.resizeMode ? props.resizeMode : 'cover',
 }));
