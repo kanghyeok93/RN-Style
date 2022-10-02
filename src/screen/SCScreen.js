@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button, ButtonBorder} from '../components/styled/Button';
 import {Image, ImageBorder} from '../components/styled/Image';
+import {Input} from '../components/styled/Input';
 import {Text} from '../components/styled/Text';
 import {View, ViewBorder, ViewRow} from '../components/styled/View';
 
@@ -69,6 +70,13 @@ const SCScreen = () => {
           Border Button
         </Text>
       </ButtonBorder>
+
+      <Input
+        bgWhite
+        marginTop={15}
+        placeholder={'placeholder text'}
+        paddingLeft={15}
+      />
     </View>
   );
 };

@@ -12,7 +12,7 @@ export const Text = styled.Text(props => ({
   // font
   fontSize: Common.FONT_SIZE(props),
   fontWeight: Common.FONT_WEIGHT(props),
-  //   fontFamily: `NotoSansKR-${Common.FONT_WEIGHT(props)}`,
+  // fontFamily: `NotoSansKR-${Common.FONT_WEIGHT(props)}`,
 
   // color
   color: Common.FONT_COLOR(props),
@@ -40,5 +40,5 @@ export const Text = styled.Text(props => ({
   textDecoration: props.textDecoration || 'none',
 
   // line Height
-  lineHeight: props.lineHeight || null,
+  lineHeight: props.lineHeight,
 }));
