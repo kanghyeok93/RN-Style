@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, ButtonBorder} from '../components/styled/Button';
 import {Image, ImageBorder} from '../components/styled/Image';
-import {Input} from '../components/styled/Input';
+import {Input, InputBorder} from '../components/styled/Input';
 import {Text} from '../components/styled/Text';
 import {View, ViewBorder, ViewRow} from '../components/styled/View';
 
@@ -77,6 +77,19 @@ const SCScreen = () => {
         placeholder={'placeholder text'}
         paddingLeft={15}
       />
+
+      <View paddingLeft={20} paddingRight={20} width={'100%'}>
+        <InputBorder
+          bgWhite
+          brBlue
+          placeholderTextColor={'red'}
+          borderWidth={1}
+          marginTop={15}
+          placeholder={'placeholder text'}
+          paddingLeft={15}
+          borderRadius={10}
+        />
+      </View>
     </View>
   );
 };
